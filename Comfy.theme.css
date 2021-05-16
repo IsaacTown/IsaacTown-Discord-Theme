@@ -1,0 +1,286 @@
+/**
+* @name IsaacTown Discord Layout aka Modified Comfy
+* @author Nyria#3863 and MXRS IsaacTown#7090
+* @description Stay comfy while talking to your friends with MXRS IsaacTown's same layout and tons of other cool stuff.
+* @version 1.5
+*/
+
+@import url("https://therealgwjosh.github.io/AddonPackPlus/src/Comfy/vars.css");
+@import url("https://nyri4.github.io/Discolored/main.css");
+@import url("https://discord-custom-covers.github.io/usrbg/dist/usrbg.css");
+@import url("https://flashc0rd.github.io/BetterBG/bg/backgrounds.css");
+@import url("https://v-briese.github.io/Channel-Icons/channelicons.theme.css");
+
+/* If you don't like one of those variables until "Other settings" you can delete them or you can also
+    try to change those if you have some css knowledge */
+
+/* User popout animation */
+.headerPlaying-j0WQBV.header-2BwW8b, .headerSpotify-zpWxgT.header-2BwW8b, .headerStreaming-2FjmGz.header-2BwW8b, .headerXbox-3G-4PF.header-2BwW8b { padding-bottom: 30px;}.headerPlaying-j0WQBV.header-2BwW8b:after, .headerSpotify-zpWxgT.header-2BwW8b:after, .headerStreaming-2FjmGz.header-2BwW8b:after, .headerXbox-3G-4PF.header-2BwW8b:after { background: url('https://nyri4.github.io/Comfy/assets/wave.png'); background-size: 250px 20px; animation: animate 6s linear infinite !important; opacity: 1 !important;}.header-2BwW8b:after, .headerPlaying-j0WQBV:before, .headerSpotify-zpWxgT:before, .headerStreaming-2FjmGz:before, .headerXbox-3G-4PF:before { position: absolute;content: "";bottom: -1px;left: 0;width: 250px;height: 20px;z-index: -1;animation: animate2 4s linear infinite;animation-delay: 0s;opacity: 0.5;}.headerPlaying-j0WQBV:before { background: url('https://nyri4.github.io/Comfy/assets/wave_playing.png'); background-size: 250px 20px;}.headerSpotify-zpWxgT:before { background: url('https://nyri4.github.io/Comfy/assets/wave_spotify.png'); background-size: 250px 20px;}.headerStreaming-2FjmGz:before { background: url('https://nyri4.github.io/Comfy/assets/wave_streaming.png'); background-size: 250px 20px;}.headerXbox-3G-4PF:before { background: url('https://nyri4.github.io/Comfy/assets/wave_xbox.png'); background-size: 250px 20px;}@keyframes animate { 0% { background-position-x: 0;} 100% { background-position-x: 250px;}}@keyframes animate2 {0% { background-position-x: 250px; } 100% { background-position-x: 0px;}}
+
+/* No scrollbars */
+::-webkit-scrollbar { display: none !important;}.note-3HfJZ5 { margin-right: 0; }.content-1x5b-n { margin: 0 !important; border-radius: 0; }.mainContent-u_9PKf { padding-left: 8px;}.member-3-YXUe, [id*="private-channels-"] { margin: 0; max-width: unset; }.layout-2DM8Md { border-radius: 0; padding: 0 16px;}.unread-2lAfLh { z-index: 1;}.content-1LAB8Z, .item-1tOPte { margin-right: 8px;}.scroller-2hZ97C { padding-left: 0;}.scroller-2hZ97C > .content-3YMskv, .buttons-3JBrkn, .messagesPopout-24nkyi { padding-right: 10px !important; }.inviteRow-2L02ae {border-radius: 0; padding-left: 15px;}
+
+/* Better Spotify plugin seek bar */
+.container-6sXIoE { border-bottom: none !important; margin-bottom: 0 !important;}.container-6sXIoE .timeline-UWmgAx { position: relative !important;}.container-6sXIoE .bar-g2ZMIm { position: absolute !important; bottom: -6px !important; left: -8px !important; width: 240px !important; height: 53px !important;margin: 0 !important;-webkit-mask-image: linear-gradient(0.25turn, #0008, #0002) !important;mask-image: linear-gradient(0.25turn, #0008, #0002) !important;border-radius: 0 !important;}.barFill-Dhkah7 { border-radius: 0 !important;}.container-6sXIoE.maximized-vv2Wr0 .bar-g2ZMIm { height: 88px !important;}.container-6sXIoE .button-14-BFJ:hover { background-color: transparent !important;}.barFill-Dhkah7, .timeline-UWmgAx:hover .barFill-Dhkah7 { background: var(--spotify-color) !important;}.inner-WRV6k5 { z-index: 1 !important;}.barText-lmqc5O, .grabber-7sd5f5 { display: none !important;}
+
+:root {
+/* -- Others settings -- */
+
+/* Background image in status picker */
+--status-background: url('https://i.imgur.com/48Z7HMM.jpeg');
+
+/* User button spacing */
+--user-buttons-width:72px;
+--user-buttons-left:0px;
+--user-buttons-bottom:0px;
+/* User button spacing */
+--user-buttons-spacing: 1px !important;
+--user-buttons-padding: 30px 0 60px 0 !important;
+/* Avatar position */
+--avatar-left: 17.5px !important;
+--avatar-bottom: 12.0px !important;
+
+/* Avatar position */
+--avatar-left: 327.5px;
+--avatar-bottom: 26.5px;
+
+/* Avatar roundess */
+--avatar-radius: 5px;  
+
+/* Status roundness */
+--status-radius: 3px; 
+
+/* Server roundess */
+--server-radius: 8px;
+
+/* Avatar width in modals */
+--avatar-width: 130px;
+
+/* Change bonfire in modals */
+--bonfire: url('https://nyri4.github.io/Comfy/assets/bonfire.gif');
+
+/* Colored emoji picker */
+--colored-emoji: grayscale(0%); /* Change the value to "100%" if you want the basic one */
+
+/* Mention color */
+--mention-color: #f04747;
+--unread-color: #7289da;
+
+/* Mention color in chat */
+--mention-color-bar: #C66262;
+--mention-color-background: #c662621f;
+--mention-color-hover: #c6626226;
+
+/* User settings color (Mute, Deafen and settings) */
+--user-buttons-color: #096dc0;
+
+/* Chat buttons color */
+--chat-buttons: #6E85D3;
+
+/* Spotify plugin seek bar */
+--spotify-color: #1EDC62;
+
+/* Status color */
+--online: #43B581;
+--iddle: #FAA61A;
+--dnd: #F04747;
+--offline: #747F8D;
+
+/* Circles next to role names */
+--role-circle: 5px;
+
+/* Tooltips */
+--tooltips: block; /* Set it to "none" if you don't want it */
+
+/* Discord logo */
+--discord-logo: none; /* Set it to "block" if you want it */
+
+}
+ 
+.theme-dark {
+    --background-tertiary: #101320;
+    --background-secondary: #1e2233;
+    --background-secondary-alt: #191f2e;
+    --background-primary: #23283d;
+    --background-mobile-primary: #23283d;
+    --background-mobile-secondary: #1e2233;
+    --channeltextarea-background: #191f2e;
+    --background-accent: #6E85D3;
+    --background-message-hover: transparent;
+    --background-modifier-hover: #1c2030;
+    --background-modifier-active: #1a1e2e;
+    --background-modifier-selected: #191f2e;
+    --deprecated-card-bg: #12141f63;
+    --background-floating: #101320;
+    --deprecated-quickswitcher-input-background:#101320;
+    --elevation-low: none;
+    --scrollbar-auto-thumb: #121722;
+    --scrollbar-auto-track: #191f2e;
+    --scrollbar-thin-thumb: #141925;
+    --activity-card-background: #101320;
+}
+ 
+.theme-light { /* I don't support light theme it's just for the "Create a server" popup */
+    --background-tertiary: #101320;
+    --background-secondary: #1e2233;
+    --background-secondary-alt: #191f2e;
+    --background-primary: #23283d;
+    --background-accent: #6E85D3;
+    --background-modifier-hover: #262b41;
+    --background-modifier-active: #262b41;
+    --header-primary: #fff;
+    --header-secondary: #b1b5b9;
+    --text-normal: #8e9297;
+}
+
+.container-3w7J-x[aria-label*="IsaacTown"] .scroller-RmtA4e div.content-3YMskv > div:first-child {
+    width: 100%;
+    height: 210px !important;
+    box-shadow: inset  0 -20px 20px -20px var(--server-banner-shadow);
+    background-image: url("https://i.imgur.com/B5NwEPm.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+:root {
+    --server-banner-shadow: var(--background-secondary);
+}
+
+.container-3w7J-x[aria-label*="Comfy camp"] .scroller-RmtA4e div.content-3YMskv > div:first-child {
+    width: 110%;
+    height: 130px !important;
+    box-shadow: inset  0 -20px 20px -20px var(--server-banner-shadow);
+    background-image: url("https://i.imgur.com/61FVDVp.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* Important CSS */
+.container-1taM1r {
+  background: transparent !important;
+}
+.container-3w7J-x .scroller-RmtA4e::-webkit-scrollbar {
+  width: 0px;
+}
+
+:root {
+    --background:url('https://i.imgur.com/48Z7HMM.jpeg');
+    --chat-transparency:0.75;
+    --sides-transparency:0.85;
+    --sides-blur:5px;
+}
+.form-2fGMdU:before {display:none}
+.bg-h5JY_x, .app-2rEoOp, .chat-3bRxxu, .theme-dark .container-1D34oG, .scroller-1JbKMe, .sidebar-2K8pFh, .members-1998pB>div {background:transparent}
+.content-98HsJk .sidebar-2K8pFh {border-radius:0}
+.appMount-3lHmkl {background:var(--background) center/cover no-repeat}
+.chatContent-a9vAAp, .peopleColumn-29fq28 {background:rgba(35,40,61,var(--chat-transparency))}
+.withFrame-haYltI {background:var(--background-tertiary);padding-top:4px;margin-top:0}
+.privateChannels-1nO12o, .nowPlayingColumn-2sl4cE, .container-3w7J-x, #app-mount .pageWrapper-1PgVDX, .sidebar-2K8pFh>.scrollerBase-289Jih, .members-1998pB {background:rgba(30,34,51,var(--sides-transparency));backdrop-filter:blur(var(--sides-blur))}
+
+.sprite-2iCowe {
+    filter: none !important;
+    background: url('https://raw.githack.com/Pukimaa/Comfy/master/assets/emoji.png') center/contain no-repeat !important;
+}
+
+:root {
+    --server-banner-shadow: var(--background-secondary);
+}
+
+/* Important CSS */
+.container-1taM1r {
+  background: transparent !important;
+}
+.container-3w7J-x .scroller-RmtA4e::-webkit-scrollbar {
+  width: 0px;
+}
+
+.unreadBottom-1_LF_w > .unreadBar-3t3sYc.unread-1xRYoj {
+    border-radius: 4px !important;
+    background: linear-gradient(#0000, #FF355E) !important;
+    animation: 1s infinite alternate ease-out breathing-color--peach !important;
+    transition: 0.8s;
+}
+
+@keyframes breathing-color--peach {
+    from
+    {
+        background-color: #FF355E20 !important;
+    }
+    to
+    {
+        background-color: linear-gradient(#FF355E, #FF355E12) !important;
+        filter:blur(2px);
+    }
+}
+
+.tutorialContainer-2sGCg9 {
+    position: fixed;
+    z-index: 1;
+    background: linear-gradient(var(--background-tertiary) 100%, transparent);
+}
+.guilds-1SWlCJ .scroller-1Bvpku { contain: none !important; padding-top: 0;}
+.guilds-1SWlCJ .scroller-1Bvpku > [aria-label], .guilds-1SWlCJ .scroller-1Bvpku > [style]:nth-child(2) { margin-top: 55px;}
+.guilds-1SWlCJ .scroller-1Bvpku > [style] ~ [aria-label] { margin-top: 0px;}
+
+.search-2oPWTC:not(.open-6_Y_aH) .iconContainer-O4O2CN {transform: initial}
+.search-2oPWTC:not(.open-6_Y_aH) .searchBar-3dMhjb {width: 28px}
+.search-2oPWTC:not(.open-6_Y_aH):hover .searchBar-3dMhjb {width: 28px;background-color: transparent}
+
+.searchBar-3dMhjb {
+    width: 28px;
+    color: var(--interactive-normal);
+}
+.open-6_Y_aH .searchBar-3dMhjb {
+    width: 320px;
+    background: var(--background-tertiary);
+    transition: .25s;
+}
+.iconContainer-O4O2CN {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.icon-3cZ1F_.visible-3V0mGj path {fill: var(--interactive-normal)}
+.open-6_Y_aH .searchBar-3dMhjb .icon-3cZ1F_.visible-3V0mGj path {fill: var(--interactive-active)}
+.iconContainer-O4O2CN:hover .icon-3cZ1F_.visible-3V0mGj path {fill: var(--interactive-hover)}
+
+:root {
+    --server-banner-shadow: var(--background-secondary);
+}
+/* Important CSS */
+.container-1taM1r {
+  background: transparent !important;
+}
+.container-3w7J-x .scroller-RmtA4e::-webkit-scrollbar {
+  width: 0px;
+}
+
+container-1taM1r {
+  background: transparent !important;
+}
+
+.avatar-1BDn8e.clickable-1bVtEA { 
+    filter: drop-shadow(0 0 3px);
+    color: #096dc0;
+}
+
+.avatar-1BDn8e:hover.clickable-1bVtEA:hover {
+    filter: drop-shadow(0 0 8px);
+    color: #096dc0;
+    transform: rotate(360deg);
+    transition: width .5s ease, height .5s ease, transform .9s ease;
+}
+
+[href="/channels/811203761619337259/820232999878393856"] > div > svg > path {
+    d: path("M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z");
+    transform: scale(1.5);
+}
+
+/* take out this line and rreplaces the link to change your discord logo
+.homeIcon-FuNwkv path {fill: transparent}
+.homeIcon-FuNwkv {
+    background: url('https://i.imgur.com/RjafEmC.gif') center/contain no-repeat;
+    min-width: 50px;
+    min-height: 50px;
+}
