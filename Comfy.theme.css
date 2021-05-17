@@ -277,7 +277,15 @@ container-1taM1r {
     transform: scale(1.5);
 }
 
-/* take out this line and rreplaces the link to change your discord logo
+
+.markup-2BOw-j,
+.cozy-3raOZG .header-23xsNx {
+    color: white;
+    text-shadow: 0 0 1px black,0 0 1px black,2px 0 5px black,
+    2px 0 1px black,2px 0 1px black;
+}
+
+/* take out this line and replaces the link to change your discord logo
 .homeIcon-FuNwkv path {fill: transparent}
 .homeIcon-FuNwkv {
     background: url('https://i.imgur.com/RjafEmC.gif') center/contain no-repeat;
