@@ -33,16 +33,10 @@
 --user-buttons-width:72px;
 --user-buttons-left:0px;
 --user-buttons-bottom:0px;
+
 /* User button spacing */
 --user-buttons-spacing: 1px !important;
 --user-buttons-padding: 30px 0 60px 0 !important;
-/* Avatar position */
---avatar-left: 17.5px !important;
---avatar-bottom: 12.0px !important;
-
-/* Avatar position */
---avatar-left: 327.5px;
---avatar-bottom: 26.5px;
 
 /* Avatar roundess */
 --avatar-radius: 5px;  
@@ -133,16 +127,6 @@
     --text-normal: #8e9297;
 }
 
-.container-3w7J-x[aria-label*="IsaacTown"] .scroller-RmtA4e div.content-3YMskv > div:first-child {
-    width: 100%;
-    height: 210px !important;
-    box-shadow: inset  0 -20px 20px -20px var(--server-banner-shadow);
-    background-image: url("https://i.imgur.com/B5NwEPm.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
 :root {
     --server-banner-shadow: var(--background-secondary);
 }
@@ -156,6 +140,17 @@
     background-position: center;
     background-size: cover;
 }
+
+.container-3w7J-x[aria-label*="IsaacTown 1 year anniversary"] .scroller-RmtA4e div.content-3YMskv > div:first-child {
+    width: 100%;
+    height: 280px !important;
+    box-shadow: inset  0 -20px 20px -20px var(--server-banner-shadow);
+    background-image: url("https://i.imgur.com/B5NwEPm.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 /* Important CSS */
 .container-1taM1r {
   background: transparent !important;
@@ -170,7 +165,7 @@
     --sides-transparency:0.85;
     --sides-blur:5px;
 }
-.form-2fGMdU:before {display:none}
+.form-2fGMdU { padding-left: 66px !important;}
 .bg-h5JY_x, .app-2rEoOp, .chat-3bRxxu, .theme-dark .container-1D34oG, .scroller-1JbKMe, .sidebar-2K8pFh, .members-1998pB>div {background:transparent}
 .content-98HsJk .sidebar-2K8pFh {border-radius:0}
 .appMount-3lHmkl {background:var(--background) center/cover no-repeat}
@@ -272,6 +267,7 @@ container-1taM1r {
     transition: width .5s ease, height .5s ease, transform .9s ease;
 }
 
+
 [href="/channels/811203761619337259/820232999878393856"] > div > svg > path {
     d: path("M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z");
     transform: scale(1.5);
@@ -312,10 +308,24 @@ container-1taM1r {
   height: 80px !important;
 }
 
-/* take out this line and replaces the link to change your discord logo
-.homeIcon-FuNwkv path {fill: transparent}
-.homeIcon-FuNwkv {
-    background: url('https://i.imgur.com/RjafEmC.gif') center/contain no-repeat;
-    min-width: 50px;
-    min-height: 50px;
+.userPopout-3XzG_A .banner-2QYc2d:not([class*="Premium"]) {
+  background: url('https://i.imgur.com/48Z7HMM.jpeg');
+}
+
+.bannerUploaderInnerSquare-Um3vgL {
+  background: url('https://i.imgur.com/48Z7HMM.jpeg');
+}
+
+.root-3QyAh1[style*="--user-background"] .banner-2QYc2d {
+  height: 390px;
+}
+/*Restore old User modal*/
+.topSection-y3p-_D > header {
+  display: flex;
+    flex-direction: column-reverse;
+    width: 200px;
+    background-color: rgba(165,166,173,0.1);
+    padding: 15px;
+    margin: 20px 0 0 20px;
+    border-radius: 10px 10px 0 0;
 }
