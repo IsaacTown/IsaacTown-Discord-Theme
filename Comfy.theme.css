@@ -319,6 +319,17 @@ container-1taM1r {
 .root-3QyAh1[style*="--user-background"] .banner-2QYc2d {
   height: 390px;
 }
+
+:root{
+    --logo-color: #000000; /* change colour here */
+  }
+  .wordmarkWindows-1v0lYD path {
+    fill: var(--logo-color)
+  }
+
+  .container-JHR0NT { display: none;}
+  .stickerButton-3OEgwj { transform: none;}
+  
 /*Restore old User modal*/
 .topSection-y3p-_D > header {
   display: flex;
