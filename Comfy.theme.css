@@ -375,4 +375,17 @@ container-1taM1r {
   display: none;
 }
 
+slider-2zxowp{
+    width:calc(100% - 4ch);
+}
+.slider-1PF9SW::after{
+    content: attr(aria-valuenow);
+    color: var(--interactive-normal);
+    width: 3ch;
+    overflow: hidden;
+    position: relative;
+    float: right;
+    transform: translate(4.5ch, -1px)
+}
+
 [aria-label="Send a gift"] {display:none!important}
